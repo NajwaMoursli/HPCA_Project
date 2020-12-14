@@ -1,6 +1,6 @@
 # HPCA_Project_With_CUDA
 
-#Merge Sort Path and Batch Merge implementation with CUDA.
+# Merge Sort Path and Batch Merge implementation with CUDA.
 *Question 1.1 : Algo Merge Path of the Project
 
 *Question 1.2 : Upgrade Algo
@@ -18,7 +18,7 @@
 *Application with Alice and Bob => Cryptography
 
 
-#Step 1- Files needed:  Makefile and functions.hpp available via Gists:
+# Step 1- Files needed:  Makefile and functions.hpp available via Gists:
 
 => Makefile : https://gist.github.com/NajwaMoursli/f1b95b7d8ceb8d1abb8c446ece66960e/raw/Makefile 
 
@@ -26,9 +26,9 @@
 
 The functions.hpp gist enables to create the src for compiling the project with the Makefile via the src/repos/functions repository on Google Collalb.
 
-#Step 2- The Google Collab Notebook (file .ipynb), uses GPU for execution, and nvidia-smi as the graphic card.
+# Step 2- The Google Collab Notebook (file .ipynb), uses GPU for execution, and nvidia-smi as the graphic card.
 
-#Step 3 => Install the Cudda Compiler : 
+# Step 3 => Install the Cudda Compiler : 
 
 Preparation
 
@@ -40,13 +40,13 @@ Preparation
 
 %load_ext nvcc_plugin
 
-#Step 4 => Graphic Card for GPU use:
+# Step 4 => Graphic Card for GPU use:
 
 Graphic Card Type. Better with Tesla T4 or higher T 
 !nvidia-smi
 
 
-#Step 5 => Import the Gists needed and create the src repository 
+# Step 5 => Import the Gists needed and create the src repository 
 
 !cd src  && rm -Rf Makefile && wget -P . https://gist.github.com/NajwaMoursli/f1b95b7d8ceb8d1abb8c446ece66960e/raw/Makefile
 
@@ -55,7 +55,7 @@ Graphic Card Type. Better with Tesla T4 or higher T
 
 !git clone https://gist.github.com/NajwaMoursli/5fe67ed5c22e84ba7a6331fcf4c79249 src/repos/functions
 
-#Step 6 => Now you can execute the codes with the command : 
+# Step 6 => Now you can execute the codes with the command : 
 
 %%cuda --name main.cu (on the top of the code cell, with the code you want to run)
 
@@ -64,4 +64,4 @@ Graphic Card Type. Better with Tesla T4 or higher T
 !cd src && make run 
 
 
-#Contributors: Najwa MOURSLI and Achille BAUCHER 
+# Contributors: Najwa MOURSLI and Achille BAUCHER 
